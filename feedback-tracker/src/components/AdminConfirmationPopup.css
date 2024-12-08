@@ -1,0 +1,224 @@
+/* src/components/AdminConfirmationPopup.css */
+
+/* Overlay to dim the background when the popup is displayed */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's on top of other content */
+  }
+  
+  /* The popup container */
+  .popup {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the popup */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.3s ease-in-out; /* Fade-in effect */
+  }
+  
+  /* Popup header */
+  .popup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style for the text in the popup */
+  .popup p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    width: 100%; /* Full width for buttons */
+    max-width: 200px; /* Button size limit */
+  }
+  
+  /* Positive action button (e.g., "Yes, I am Admin") */
+  button.confirm {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  /* Negative action button (e.g., "Cancel") */
+  button.cancel {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  /* Hover effects for the buttons */
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for cancel button */
+  button.cancel:hover {
+    background-color: #e53935; /* Darker red for cancel hover */
+  }
+  
+  /* Styles for confirm button */
+  button.confirm:hover {
+    background-color: #45a049; /* Darker green for confirm hover */
+  }
+  
+  /* Animation for fading in the popup */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+/* Overlay styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup container styling */
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 400px;
+  text-align: center;
+}
+
+/* Close button (cross mark) styling */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Confirm button styling */
+.confirm {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.confirm:hover {
+  background-color: #45a049;
+}
+
+/* Cancel button styling */
+.cancel {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+.popup {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm,
+.cancel {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.cancel {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,1136 @@
+/* General Styling */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #eef2f9);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #06cdf0;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #1632e9;
+}
+
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Modify the logout button to change its color */
+.navbar button.logout-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  padding: 8px 12px; /* Adjust padding to reduce size */
+  width: 100px; /* Set a fixed width for the button */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover effect */
+.navbar button.logout-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Active state when clicked */
+.navbar button.logout-button:active {
+  background-color: #c62828; /* Even darker red when clicked */
+  transform: scale(1); /* Reset scale when clicked */
+}
+
+
+
+nav .logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #6a84f6, #8dc8f4);
+  color: white;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.welcome h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome p {
+  font-size: 22px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Form Container */
+.feedback-container {
+  background: #ffffff;
+  margin: 50px auto;
+  padding: 40px 50px;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.feedback-container:hover {
+  transform: translateY(-5px);
+}
+
+.feedback-container h1 {
+  text-align: center;
+  color: #5b84e4;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.feedback-container p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Feedback Form Elements */
+.feedback-form {
+  width: 100%;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  border-color: #5b84e4;
+  box-shadow: 0 5px 15px rgba(91, 132, 228, 0.5);
+}
+
+/* Submit Button */
+.feedback-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #5b84e4, #7bc6f6);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.feedback-form button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #7bc6f6, #5b84e4);
+}
+
+/* Success Message */
+.feedback-success {
+  margin-top: 30px;
+  padding: 20px;
+  background: #4caf50;
+  color: white;
+  border-radius: 12px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+  background: linear-gradient(135deg, #5b84e4, #6ecf68);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ff8c42;
+}
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f7fa;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.realtime-tracker {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.realtime-tracker h2 {
+  font-size: 28px;
+  color: #5b84e4;
+}
+
+.realtime-tracker p {
+  font-size: 20px;
+  color: #333;
+}
+
+.dashboard-summary,
+.dashboard-trends,
+.dashboard-management {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-summary h3,
+.dashboard-trends h3,
+.dashboard-management h3 {
+  margin-bottom: 20px;
+  color: #5b84e4;
+}
+
+
+.dashboard-summary {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add this */
+}
+
+.summary-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.summary-section div {
+  width: 48%;
+}
+
+.summary-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.summary-section ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Feedback Management Section */
+.feedback-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.btn-close {
+  padding: 10px 20px;
+  background: #4caf50; /* Green for 'Closed' status */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-close:hover {
+  background: #3e8e41; /* Darker green on hover */
+}
+
+
+
+
+.chart-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-wrapper {
+  width: 40%; /* Adjust this for overall width control */
+  max-width: 300px; /* Optional: Limit max width */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #5b84e4;
+}
+
+.realtime-tracker {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.manage-feedback-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b84e4;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.manage-feedback-link:hover {
+  color: #7bc6f6;
+}
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.manage-feedback-button {
+  background-color: #5b84e4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute; /* Add this */
+  bottom: 5px; /* Adjust the distance from the bottom */
+  right: 10px; /* Adjust the distance from the right */
+}
+
+
+.manage-feedback-button .arrow {
+  font-weight: bold;
+}
+
+.manage-feedback-button:hover {
+  background-color: #3a5cbf;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.download-icon {
+  position: relative;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: #6a84f6; /* Matches your theme color */
+}
+
+
+.download-options {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #2c2f35;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.download-options button:hover {
+  background: #444;
+  color: #6a84f6;
+}
+
+
+.dashboard-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.feedback-summary {
+  display: flex;
+  flex-direction: column; /* This stacks the children vertically */
+  gap: 20px; /* Adds space between the charts */
+}
+
+.dashboard-management {
+  flex: 1;
+  max-width: 60%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: auto; /* Adjust this value as needed */
+  padding-bottom: auto;
+}
+
+.dashboard-summary {
+  flex: 1;
+  max-width: 40%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increase space between charts */
+  margin-top: 20px;
+  width: 100%; /* Full width of its parent */
+  max-width: 1200px; /* You can set a specific max-width if needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column; /* Stack charts vertically */
+  gap: 20px; /* Add some space between the charts */
+}
+.chart-wrapper {
+  width: 100%;
+}
+
+.chart-wrapper {
+  width:85%; /* Increased from 40% to 48% for more width */
+  max-width: 1000px; /* Optional: You can limit the max width */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper {
+  padding-bottom: 38px; /* Increase this value to add more space at the bottom */
+}
+
+
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column; /* Stack charts vertically on smaller screens */
+    gap: 20px; /* Adjust gap for stacked layout */
+  }
+
+  .chart-wrapper {
+    width: 100%; /* Full width on smaller screens */
+    max-width: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+.home-page {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.feedback-highlights {
+  margin-top: 40px;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  width: calc(33.333% - 20px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-message {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.feedback-author {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+/* Hero Section */
+.hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('your-hero-image.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Featured Feedback Section */
+.featured-feedback {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured-feedback h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-message {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.feedback-author {
+  text-align: right;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Explore Feedback Section */
+.explore-feedback {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.explore-feedback h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.category-buttons button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #218838;
+}
+
+
+.hero {
+  position: relative;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 80px 20px;
+  background-image: url('your-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.3);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 16px 32px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.7);
+}
+
+/* Featured Feedback Section */
+.featured-feedback {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-feedback h2 {
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feedback-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-message {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.feedback-author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Explore Feedback Section */
+.explore-feedback {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.explore-feedback h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #333;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-buttons button {
+  background-color: #28a745;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3em;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #218838;
+  transform: translateY(-5px);
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 50px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.call-to-action .cta-button {
+  background-color: #fff;
+  color: #007bff;
+  padding: 16px 32px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+/* Enhanced Feedback Card Styles */
+.feedback-card {
+  background: linear-gradient(145deg, #f3f4f6, #ffffff); /* Subtle gradient */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+  border-radius: 12px; /* Softer, more modern rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Elevation effect */
+  padding: 1.5rem;
+  width: calc(33.333% - 1rem);
+  max-width: 300px;
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative; /* For adding decorative elements */
+}
+
+.feedback-card:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Highlight shadow on hover */
+}
+
+/* Decorative Element: Top Accent Line */
+.feedback-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #4caf50, #2196f3); /* Accent color */
+  border-radius: 12px 12px 0 0;
+}
+
+/* Feedback Message */
+.feedback-message {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  min-height: 60px; /* Ensure consistent height for card alignment */
+}
+
+/* Feedback Author */
+.feedback-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Optional Icon at the Bottom */
+.feedback-card .feedback-icon {
+  font-size: 2rem;
+  color: #4caf50; /* Match accent colors */
+  margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .feedback-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-card {
+    width: 100%;
+  }
+}
+
+
+
+
+.feedback-card {
+  background-color: #f9f9f9; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+  padding: 20px; 
+  margin: 15px; 
+  border: 2px solid transparent; 
+  background-clip: padding-box;
+  position: relative;
+  overflow: hidden; /* Clip hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, #7ca5ff, #2a8aff); /* Change gradient to a red/pink tone */
+  z-index: 0;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  transform: rotate(45deg);
+}
+
+.feedback-card:hover:before {
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  transform: rotate(0deg);
+}
+
+.feedback-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Emphasize shadow */
+}
+
+.feedback-card blockquote {
+  font-size: 1.5rem; /* Font size for the message */
+  color: #ffffff; /* Darker text for better contrast */
+  font-style: italic;
+  margin: 0;
+  z-index: 1; /* Above background effect */
+  position: relative;
+}
+
+.feedback-card .feedback-author {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: #555; /* Darker text for the author's name */
+  z-index: 1; /* Above background effect */
+  position: relative;
+}
+
+
+
+
+
+
+
+.call-to-action {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #a9a9a9, #6e6e6e); /* Grey gradient background */
+  color: white;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.call-to-action .cta-button {
+  background-color: #0f78f1; /* Yellow CTA button */
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #124ef3; /* Darker yellow on hover */
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+/* About Us Section Styling */
+.about-us {
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Add emphasis */
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-us a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #0066cc;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.about-us a:hover {
+  background-color: #004d99; /* Darker blue on hover */
+}

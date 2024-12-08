@@ -1,0 +1,172 @@
+/* Background overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+}
+
+/* Popup container */
+.popup {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Smooth gradient */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.4s ease-in-out, scaleIn 0.4s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scale-in animation */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Header styles */
+.popup h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+/* Form container */
+.popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels */
+.popup label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs */
+.popup input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.popup input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+/* Buttons */
+.popup button {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px; /* Rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Submit button */
+.popup button[type="submit"] {
+    background: linear-gradient(90deg, #4caf50, #45a049);
+    color: white;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.popup button[type="submit"]:hover {
+    background: linear-gradient(90deg, #45a049, #3e8e41);
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.6);
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Close button */
+.popup button.close {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #f44336, #e53935);
+    color: white;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+.popup button.close:hover {
+    background: linear-gradient(90deg, #e53935, #d32f2f);
+    box-shadow: 0 6px 15px rgba(244, 67, 54, 0.6);
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Toggle link container */
+.toggle-link {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.toggle-link p {
+    color: #555;
+}
+
+.toggle-button {
+    background: none;
+    color: #007bff;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .popup {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .popup h2 {
+        font-size: 1.6em;
+    }
+
+    .popup input {
+        font-size: 14px;
+    }
+
+    .popup button {
+        font-size: 14px;
+    }
+}
